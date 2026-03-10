@@ -5,8 +5,12 @@ import { fileURLToPath } from "url";
 import { UserController } from "./src/controllers/UserController.js";
 
 const app = express();
-const HOST = "localhost";
-const PORT = 3000;
+const HOST = "0.0.0.0";
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, HOST, () => {
+  console.log(`Servidor rodando em http://${HOST}:${PORT}`);
+});
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
