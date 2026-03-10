@@ -8,10 +8,6 @@ const app = express();
 const HOST = "0.0.0.0";
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT,  () => {
-  console.log(`Servidor rodando em ${PORT}`);
-});
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
