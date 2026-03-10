@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciamento de Usuários</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Sistema de Gerenciamento</h1>
+    <p>Gerencie usuários de forma simples e eficiente</p>
+
+    <section class="card">
+      <h2>Adicionar Novo Usuário</h2>
+
+      <form id="userForm">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required />
+
+        <label for="age">Idade</label>
+        <input type="number" id="age" required min="0" />
+
+        <button type="submit">Cadastrar Usuário</button>
+      </form>
+
+      <div id="formMessage"></div>
+    </section>
+
+    <section class="card">
+      <h2>Lista de Usuários</h2>
+      <div id="usersMessage"></div>
+      <div id="usersList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

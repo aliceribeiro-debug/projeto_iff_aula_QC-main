@@ -1,0 +1,14 @@
+{
+  "name": "projeto-iff-aula-qc",
+  "version": "1.0.0",
+  "description": "Projeto orientado a objeto com backend API e frontend integrado",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
